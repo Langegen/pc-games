@@ -3,6 +3,11 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 cd "$(dirname "$0")"
 
+# Игнорировать изменения прав доступа файлов
+git config core.fileMode false
+git config user.name "Langegen"
+git config user.email "bot@play2go.cloud"
+
 # Взаимная блокировка от параллельных запусков
 LOCK_FILE="/tmp/pc-games-scraper.lock"
 exec 200>"$LOCK_FILE"
@@ -34,7 +39,7 @@ fi
 rm -rf /tmp/tmp* /tmp/playwright* /tmp/xvfb* 2>/dev/null || true
 
 echo "[$(date)] Выгрузка изменений на GitHub..."
-git add data/pc_games.json data/subforums.json data/pc_games_stats.json changes.txt
+git add data/pc_games.json data/subforums.json data/pc_games_stats.json changes.txt run.sh
 if git diff --staged --quiet; then
     echo "[$(date)] Изменений нет - коммит не нужен."
 else
