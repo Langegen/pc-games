@@ -117,15 +117,21 @@ def _fetch_with_curl(url, wait_keywords=None, is_post=False, post_data=None):
             if not is_cf_challenge(resp.text):
                 _curl_fail_streak = 0
                 return resp.text
+            else:
+                _curl_fail_streak += 1
+        elif resp.status_code in (404, 410):
+            # Тема удалена или недоступна на трекере
+            return resp.text
+        else:
+            _curl_fail_streak += 1
     except Exception as e:
-        print(f"    [!] curl_cffi ошибка: {e}")
+        # Сетевой таймаут или временный сбой соединения
+        pass
 
-    _curl_fail_streak += 1
-    if _curl_fail_streak >= 3:
+    if _curl_fail_streak >= 5:
         CURL_DISABLED = True
-        print("[~] curl_cffi не проходит Cloudflare на этом хосте — переключаемся на Chrome.")
+        print("[~] curl_cffi заблокирован Cloudflare — переключаемся на Chrome.")
 
-    print("    [!] curl_cffi не смог получить страницу, переключаемся на Chrome...")
     return _fetch_with_chrome(url, wait_keywords, is_post, post_data)
 
 

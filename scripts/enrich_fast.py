@@ -9,7 +9,7 @@ if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
 from core.topic_parser import get_topic_data, merge_topic_details
-from core.storage import load_json, save_json, GAMES_FILE, METADATA_FIELDS
+from core.storage import load_json, save_json, GAMES_FILE
 
 def is_incomplete(item):
     return (not item.get('description') or 
@@ -23,19 +23,19 @@ def enrich_worker(item):
     try:
         details = get_topic_data(tid)
         return tid, details
-    except Exception as e:
+    except Exception:
         return tid, None
 
-def run_enrich_fast(limit=50, max_workers=5):
+def run_enrich_fast(limit=None, max_workers=6, save_interval=50):
     games = load_json(GAMES_FILE) or []
     candidates = [g for g in games if is_incomplete(g)]
     
-    if limit:
+    if limit and limit > 0:
         candidates = candidates[:limit]
 
     total = len(candidates)
     if total == 0:
-        print("[*] Все раздачи уже дообогащены!")
+        print("[*] Все раздачи уже дообогащены! (100% базы заполнено)")
         return
 
     print(f"[*] Запуск быстрого дообогащения для {total} раздач ({max_workers} потоков)...")
@@ -54,16 +54,22 @@ def run_enrich_fast(limit=50, max_workers=5):
                 merge_topic_details(cand_map[tid], details)
                 success_count += 1
             
-            if done_count % 10 == 0 or done_count == total:
+            if done_count % save_interval == 0 or done_count == total:
                 elapsed = time.time() - start_time
                 speed = done_count / elapsed if elapsed > 0 else 0
-                print(f"  Прогресс: {done_count}/{total} ({success_count} успешно) - {speed:.1f} тем/сек")
+                remaining = total - done_count
+                eta_sec = remaining / speed if speed > 0 else 0
+                eta_min = eta_sec / 60
+                print(f"  [{done_count:4d}/{total:4d}] Успешно: {success_count} | Скорость: {speed:.1f} тем/сек | ETA: {eta_min:.1f} мин", flush=True)
                 save_json(games, GAMES_FILE)
 
     save_json(games, GAMES_FILE)
     elapsed = time.time() - start_time
-    print(f"[+] Готово за {elapsed:.1f} сек! Успешно обогащено: {success_count}/{total}")
+    print(f"\n[+] Дообогащение завершено за {elapsed/60:.1f} мин! Успешно обогащено: {success_count}/{total}")
 
 if __name__ == '__main__':
-    limit_arg = int(sys.argv[1]) if len(sys.argv) > 1 else 30
-    run_enrich_fast(limit=limit_arg, max_workers=5)
+    limit_val = None
+    if len(sys.argv) > 1 and sys.argv[1].lower() not in ('all', '0'):
+        limit_val = int(sys.argv[1])
+    workers_val = int(sys.argv[2]) if len(sys.argv) > 2 else 6
+    run_enrich_fast(limit=limit_val, max_workers=workers_val)
