@@ -85,9 +85,15 @@ def get_topic_data(topic_id: str | int) -> dict:
         "developer": "Unknown",
         "publisher": "Unknown",
         "version": "Unknown",
+        "edition_type": "Unknown",
+        "release_type": "Portable",
         "interface_lang": "Unknown",
         "voice_lang": "Unknown",
+        "source": "Unknown",
+        "steam_id": None,
+        "steam_url": None,
         "cover": None,
+        "cover_standard": None,
         "screenshots": [],
         "description": "",
     }
@@ -144,51 +150,85 @@ def get_topic_data(topic_id: str | int) -> dict:
     # 4. Текстовые метаданные из тела поста
     text_content = post_text(post_body)
     patterns = {
-        "year": r'(?:Год выпуска|Дата выхода|Год выхода)\s*:\s*([^\n]+)',
+        "year": r'(?:Год выпуска|Дата выпуска|Дата выхода|Год выхода|Release date)\s*:\s*([^\n]+)',
         "genre": r'Жанр\s*:\s*([^\n]+)',
         "developer": r'Разработчик\s*:\s*([^\n]+)',
         "publisher": r'Издатель\s*:\s*([^\n]+)',
         "version": r'(?:Версия(?:\s+игры)?|Game\s*Version)\s*:\s*([^\n]+)',
+        "edition_type": r'Тип издания\s*:\s*([^\n]+)',
+        "release_type": r'Релиз\s*:\s*([^\n]+)',
         "interface_lang": r'Язык интерфейса\s*:\s*([^\n]+)',
         "voice_lang": r'(?:Язык озвучки|Озвучка)\s*:\s*([^\n]+)',
+        "source": r'Источник\s*:\s*([^\n]+)',
     }
 
     for key, pat in patterns.items():
         m = re.search(pat, text_content, re.IGNORECASE)
         if m:
-            data[key] = m.group(1).strip()
+            val = m.group(1).strip()
+            # Убираем лишние обрамляющие скобки если есть
+            if val:
+                data[key] = val
 
     if data.get("version") and data["version"] != "Unknown":
         cv = clean_version_str(data["version"])
         if cv:
             data["version"] = cv
 
+    # Определение Steam App ID и ссылки на источник
+    steam_m = re.search(r'store\.steampowered\.com/app/(\d+)', html)
+    if steam_m:
+        sid = steam_m.group(1)
+        data["steam_id"] = sid
+        data["steam_url"] = f"https://store.steampowered.com/app/{sid}"
+        # Стандартный постер Steam Library Capsule 600x900
+        data["cover_standard"] = f"https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{sid}/library_600x900.jpg"
+
     # 5. Обложка и скриншоты
-    img_urls = []
-    # Парсим элементы с class="postImg" (<var class="postImg" title="URL"> или <img src="URL">)
+    # Ищем специальный спойлер со скриншотами
+    sp_screen = None
+    for sp in post_body.find_all('div', class_='sp-wrap'):
+        head = sp.find('div', class_='sp-head')
+        if head and 'скриншот' in head.get_text().lower():
+            sp_screen = sp
+            break
+
+    screenshots = []
+    if sp_screen:
+        for el in sp_screen.find_all(['var', 'img'], class_='postImg'):
+            parent_a = el.find_parent('a')
+            href = parent_a.get('href', '').strip() if parent_a else ''
+            thumb = (el.get('title') or el.get('src') or '').strip()
+            if href.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
+                if href not in screenshots:
+                    screenshots.append(href)
+            elif thumb and thumb.startswith('http') and 'smiles' not in thumb:
+                if thumb not in screenshots:
+                    screenshots.append(thumb)
+
+    # Обложка — первая картинка вне спойлера со скриншотами
+    cover = None
+    all_imgs = []
     for el in post_body.find_all(['var', 'img'], class_='postImg'):
-        img_url = (el.get('title') or el.get('src') or '').strip()
-        if img_url.startswith('http') and 'rutracker.cc/smiles' not in img_url and img_url not in img_urls:
-            img_urls.append(img_url)
+        if sp_screen and el in sp_screen.find_all(['var', 'img'], class_='postImg'):
+            continue
+        u = (el.get('title') or el.get('src') or '').strip()
+        if u.startswith('http') and 'smiles' not in u:
+            all_imgs.append(u)
+            if not cover:
+                cover = u
 
-    if not img_urls:
-        for pat in [
-            r'init-src=["\']?(https://[^"\'>\s]+)',
-            r'data-src=["\']?(https://[^"\'>\s]+)',
-            r'<img[^>]+src=["\']?(https://[^"\'>\s]+)'
-        ]:
-            for m in re.finditer(pat, str(post_body), re.IGNORECASE):
-                u = m.group(1).rstrip('/')
-                if 'rutracker.cc/smiles' not in u and u not in img_urls:
-                    img_urls.append(u)
+    if not screenshots and len(all_imgs) > 1:
+        screenshots = all_imgs[1:10]
 
-    if img_urls:
-        data["cover"] = img_urls[0]
-        data["screenshots"] = img_urls[1:10]
+    data["cover"] = cover
+    if not data["cover_standard"]:
+        data["cover_standard"] = cover
+    data["screenshots"] = screenshots[:10]
 
     # 6. Описание
     desc_match = re.search(
-        r'Описание\s*:\s*([\s\S]+?)(?=\n\s*(?:Системные требования|Доп\. информация|Скриншоты|Трейлер|Список файлов|FAQ|Время раздачи)|$)',
+        r'Описание\s*:\s*([\s\S]+?)(?=\n\s*(?:Системные требования|Минимальные|Рекомендуемые|Доп\. информация|Скриншоты|Трейлер|Список файлов|FAQ|Время раздачи|Особенности)|$)',
         text_content, re.IGNORECASE
     )
     if desc_match:

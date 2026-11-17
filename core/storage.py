@@ -19,7 +19,8 @@ ENRICH_STATE_FILE = os.path.join(BASE_DIR, 'enrich_state.json')
 # Поля, которые должны быть дообогащены со страницы темы
 METADATA_FIELDS = (
     'cover', 'screenshots', 'description', 'year', 'genre',
-    'developer', 'publisher', 'version', 'interface_lang', 'voice_lang'
+    'developer', 'publisher', 'version', 'edition_type',
+    'release_type', 'interface_lang', 'voice_lang', 'source', 'magnet'
 )
 
 
@@ -100,7 +101,7 @@ def save_enrich_state(state: dict) -> None:
         print(f"[!] Ошибка сохранения enrich_state: {e}")
 
 
-def enrich_incomplete(games_data: list[dict], limit: int = 100) -> int:
+def enrich_incomplete(games_data: list[dict], limit: int = 100, save_interval: int = 20) -> int:
     """Дообогащает метаданными раздачи, у которых отсутствуют обложка/описание.
 
     Возвращает количество успешно обновлённых записей.
@@ -154,9 +155,14 @@ def enrich_incomplete(games_data: list[dict], limit: int = 100) -> int:
         else:
             print("    [-] Данные на странице не найдены.")
 
-        time.sleep(0.5)
+        if enriched_count > 0 and enriched_count % save_interval == 0:
+            save_json(games_data, GAMES_FILE)
+            save_enrich_state(state)
+
+        time.sleep(0.3)
 
     save_enrich_state(state)
+    save_json(games_data, GAMES_FILE)
     return enriched_count
 
 
