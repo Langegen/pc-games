@@ -1,0 +1,38 @@
+=== Изменения базы pc-games: 2026-11-17 13:38:24 ===
+Всего игр в базе: 848
+Добавлено новых: 350
+Обновлено раздач: 0
+Дообогащено метаданными: 0
+
+--- Новые раздачи [portable] ---
+  + [Старые игры (Аркады)] [CD] Bedlam 2: Absolute Bedlam (18.8 MB ↓) - t=1549123
+  + [Старые игры (Аркады)] [CD] Ancient Quest of Saqqarah: Monkey Monarchs (26 MB ↓) - t=1565261
+  + [Логические игры] [CD] Супер шарики (2.5 MB ↓) - t=1560932
+  + [Старые игры (Экшены)] [CD] Men in Black: The Game (87.3 MB ↓) - t=1549753
+  + [Старые игры (Экшены)] S.T.A.L.K.E.R.: Shadow of Chernobyl (1.27 GB ↓) - t=1590342
+  + [Старые игры (Симуляторы)] [CD] Go Go Gourmet (34.5 MB ↓) - t=1612702
+  + [Старые игры (Симуляторы)] [CD] Snowboard Park Tycoon (216.3 MB ↓) - t=1617442
+  + [Старые игры (Экшены)] [CD] [Сборник] Doom I+II (Hell on the Earth, TNT: Evilution, Plutonia Experiment) (240.7 MB ↓) - t=1631400
+  + [Старые игры (Аркады)] [CD] DX-Ball (716 KB ↓) - t=1641868
+  + [Старые игры (Симуляторы)] [CD] Dirt Bike 2 (4.2 MB ↓) - t=1649616
+  + [Старые игры (Приключения и квесты)] [CD] Beast Sacrifice (Sacrifice of Animal, ?????) (140.9 MB ↓) - t=1657227
+  + [Старые игры (Аркады)] [CD] The Maw + Deleted Scenes (Brute Force, River Redirect) (161.5 MB ↓) - t=1664022
+  + [Старые игры (Экшены)] [CD] Natural Fawn Killers + NFK: Santa's Gone Postal (6.4 MB ↓) - t=1672564
+  + [Старые игры (Стратегии)] [CD] HPS Simulations: Squad Battles: Advance of the Reich (189.3 MB ↓) - t=1673525
+  + [Логические игры] [CD] Monte Carlo 2 (159.9 MB ↓) - t=1677821
+  + [Старые игры (Симуляторы)] [CD] 3D Пирамида Хеопса, интерактивная прогулка. (4.5 MB ↓) - t=1730700
+  + [Старые игры (Стратегии)] [CD] HPS Napoleonic Battles (1.44 GB ↓) - t=1732495
+  + [Старые игры (Аркады)] [CD] [Сборник] 24 Games for Windows 95 (5.9 MB ↓) - t=1742969
+  + [Старые игры (Экшены)] [CD] DemonoPhobia (9.4 MB ↓) - t=1761908
+  + [Логические игры] [CD] Incadia (6.3 MB ↓) - t=1767578
+  + [Старые игры (Стратегии)] [CD] Space Hulk Remake (33.5 MB ↓) - t=1792330
+  + [Старые игры (Экшены)] [CD] [Сборник] Naruto The Setting Dawn (10 игр) (762.5 MB ↓) - t=1657100
+  + [Логические игры] [CD] Diamond Tetris (18 MB ↓) - t=1821647
+  + [Старые игры (Экшены)] [CD] Lucky Star Battle Chronicle (123.9 MB ↓) - t=1827059
+  + [Старые игры (Симуляторы)] [CD] The Real Car Simulator (Nissan + Toyota) (134.4 MB ↓) - t=1877124
+  + [Старые игры (Стратегии)] [CD] Robo Rumble / RoBoRumble (10.2 MB ↓) - t=1907355
+  + [Старые игры (Симуляторы)] [CD] RS3: Racing Simulation Three (3) / F-1: Максимальное ускорение (159.5 MB ↓) - t=1922003
+  + [Старые игры (Аркады)] [CD] Dilbert's Desktop Games (15.1 MB ↓) - t=1934685
+  + [Старые игры (Симуляторы)] [CD] Alarm for Cobra 11: Nitro / Спецотряд 'Кобра 11': Полицейский Армагеддон (1.08 GB ↓) - t=1942689
+  + [Старые игры (Аркады)] [CD] [Сборник] Codemaster (ARCADIA, ARCADIA II (2) THE SWEET WORLD, MIRACLE FATE, NECROMANSER, Returning of legend Exolon, Sonic in Caricamento, Sonic3D The Perishing Country of Fairies, THREE WEEKS IN PARADISE!, TRAP DOOR, Unusual Land) (101.7 MB ↓) - t=1976517
+  ... и ещё 320 раздач

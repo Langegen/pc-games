@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+*.pyc
+*.tmp
+*.log
+.DS_Store
+.idea/
+.vscode/
+enrich_state.json

@@ -1,0 +1,210 @@
+[
+  {
+    "id": "962",
+    "name": "Автосимуляторы и гонки",
+    "slug": "racing",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 1
+  },
+  {
+    "id": "2118",
+    "name": "Антологии и сборники игр",
+    "slug": "collections",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 10
+  },
+  {
+    "id": "127",
+    "name": "Аркады",
+    "slug": "arcade",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 532
+  },
+  {
+    "id": "959",
+    "name": "Демо-версии и игры с ранним доступом",
+    "slug": "early-access",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 0
+  },
+  {
+    "id": "2204",
+    "name": "Логические игры",
+    "slug": "puzzle",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 416
+  },
+  {
+    "id": "635",
+    "name": "Новинки",
+    "slug": "new",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 78
+  },
+  {
+    "id": "2115",
+    "name": "Онлайн Игры",
+    "slug": "online",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 0
+  },
+  {
+    "id": "53",
+    "name": "Приключения и квесты",
+    "slug": "adventure",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 539
+  },
+  {
+    "id": "52",
+    "name": "Ролевые игры",
+    "slug": "rpg",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 508
+  },
+  {
+    "id": "54",
+    "name": "Симуляторы",
+    "slug": "simulators",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 535
+  },
+  {
+    "id": "2187",
+    "name": "Спортивные симуляторы",
+    "slug": "sports",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 0
+  },
+  {
+    "id": "50",
+    "name": "Хорроры",
+    "slug": "horror",
+    "parent": null,
+    "is_retro": false,
+    "games_count": 513
+  },
+  {
+    "id": "1008",
+    "name": "Квесты в стиле Поиск предметов",
+    "slug": "hidden-object",
+    "parent": "Приключения и квесты",
+    "is_retro": false,
+    "games_count": 64
+  },
+  {
+    "id": "2226",
+    "name": "Пошаговые стратегии",
+    "slug": "strategy-tbs",
+    "parent": "Стратегии",
+    "is_retro": false,
+    "games_count": 324
+  },
+  {
+    "id": "51",
+    "name": "Стратегии в реальном времени",
+    "slug": "strategy-rts",
+    "parent": "Стратегии",
+    "is_retro": false,
+    "games_count": 398
+  },
+  {
+    "id": "647",
+    "name": "Экшены от первого лица",
+    "slug": "action-fps",
+    "parent": "Экшены",
+    "is_retro": false,
+    "games_count": 408
+  },
+  {
+    "id": "646",
+    "name": "Экшены от третьего лица",
+    "slug": "action-tps",
+    "parent": "Экшены",
+    "is_retro": false,
+    "games_count": 281
+  },
+  {
+    "id": "2227",
+    "name": "Автосимуляторы и гонки (Старые Игры)",
+    "slug": "retro-racing",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 0
+  },
+  {
+    "id": "2385",
+    "name": "Логические игры (Старые Игры)",
+    "slug": "retro-puzzle",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 0
+  },
+  {
+    "id": "1007",
+    "name": "Старые игры (Аркады)",
+    "slug": "retro-arcade",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 110
+  },
+  {
+    "id": "2225",
+    "name": "Старые игры (Приключения и квесты)",
+    "slug": "retro-adventure",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 20
+  },
+  {
+    "id": "2410",
+    "name": "Старые игры (Ролевые игры)",
+    "slug": "retro-rpg",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 17
+  },
+  {
+    "id": "2206",
+    "name": "Старые игры (Симуляторы)",
+    "slug": "retro-simulators",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 98
+  },
+  {
+    "id": "2205",
+    "name": "Старые игры (Стратегии)",
+    "slug": "retro-strategy",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 84
+  },
+  {
+    "id": "1310",
+    "name": "Старые игры (Экшены)",
+    "slug": "retro-action",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 99
+  },
+  {
+    "id": "649",
+    "name": "Эротические игры (Старые Игры)",
+    "slug": "retro-erotic",
+    "parent": "Старые игры",
+    "is_retro": true,
+    "games_count": 0
+  }
+]
