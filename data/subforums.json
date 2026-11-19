@@ -37,7 +37,7 @@
     "slug": "puzzle",
     "parent": null,
     "is_retro": false,
-    "games_count": 416
+    "games_count": 417
   },
   {
     "id": "635",
@@ -45,7 +45,7 @@
     "slug": "new",
     "parent": null,
     "is_retro": false,
-    "games_count": 84
+    "games_count": 85
   },
   {
     "id": "2115",
@@ -61,7 +61,7 @@
     "slug": "adventure",
     "parent": null,
     "is_retro": false,
-    "games_count": 544
+    "games_count": 549
   },
   {
     "id": "52",
@@ -77,7 +77,7 @@
     "slug": "simulators",
     "parent": null,
     "is_retro": false,
-    "games_count": 536
+    "games_count": 545
   },
   {
     "id": "2187",
@@ -93,7 +93,7 @@
     "slug": "horror",
     "parent": null,
     "is_retro": false,
-    "games_count": 513
+    "games_count": 514
   },
   {
     "id": "1008",
@@ -101,7 +101,7 @@
     "slug": "hidden-object",
     "parent": "Приключения и квесты",
     "is_retro": false,
-    "games_count": 64
+    "games_count": 65
   },
   {
     "id": "2226",
@@ -117,7 +117,7 @@
     "slug": "strategy-rts",
     "parent": "Стратегии",
     "is_retro": false,
-    "games_count": 400
+    "games_count": 401
   },
   {
     "id": "647",
@@ -133,7 +133,7 @@
     "slug": "action-tps",
     "parent": "Экшены",
     "is_retro": false,
-    "games_count": 283
+    "games_count": 284
   },
   {
     "id": "2227",

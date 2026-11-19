@@ -1,37 +1,34 @@
-=== Изменения базы pc-games: 2026-11-18 02:01:54 ===
-Всего игр в базе: 5053
-Добавлено новых: 18
-Обновлено раздач: 10
+=== Изменения базы pc-games: 2026-11-19 02:01:55 ===
+Всего игр в базе: 5073
+Добавлено новых: 20
+Обновлено раздач: 5
 Дообогащено метаданными: 100
 
 --- Новые раздачи [portable] ---
-  + [Новинки] The Big Suck (714.7 MB) - t=6936605
-  + [Новинки] Akiba Lost (53.66 GB) - t=6936597
-  + [Новинки] Extreme Forklifting 3 (221 MB) - t=6936192
-  + [Новинки] Kimbap Heaven Simulator (4.58 GB) - t=6936183
-  + [Новинки] What the Buck?! (560 MB) - t=6936180
-  + [Новинки] Cinema Theater Tycoon (1.8 GB) - t=6936178
-  + [Экшены от третьего лица] Conan Exiles Enhanced (58.98 GB) - t=6855161
-  + [Экшены от третьего лица] Link Loop (64.3 MB) - t=6939138
-  + [Ролевые игры] Melvor Idle 2: A RuneScape Adventure (707.2 MB) - t=6939181
-  + [Стратегии в реальном времени] Here Comes the Horde (236.2 MB) - t=6939294
-  + [Стратегии в реальном времени] Dawn of Defense (925.1 MB) - t=6939208
-  + [Приключения и квесты] 1666: Amsterdam (15.78 GB) - t=6899882
-  + [Приключения и квесты] Chained Beasts (2.92 GB) - t=6925895
-  + [Приключения и квесты] Guildamation (605.1 MB) - t=6902189
-  + [Приключения и квесты] Girls vs Zombies (11.44 GB) - t=6925583
-  + [Приключения и квесты] The Witch's Bakery (5.91 GB) - t=6925147
-  + [Симуляторы] Deconstruction Simulator (10.28 GB) - t=6897427
-  + [Аркады] just volleyball (255.8 MB) - t=6939188
+  + [Новинки] Code Market (106.8 MB) - t=6938974
+  + [Экшены от третьего лица] Орбита захоронения / Graveyard Orbit (201.6 MB) - t=6939671
+  + [Стратегии в реальном времени] Automate Death (518.7 MB) - t=6939449
+  + [Приключения и квесты] Pith (820.6 MB) - t=6939434
+  + [Приключения и квесты] Idle King: Loot Together / Вместе за добычей (1.2 GB) - t=6939400
+  + [Приключения и квесты] FailRooms (1.64 GB) - t=6939389
+  + [Приключения и квесты] Rejected Draft (511 MB) - t=6939382
+  + [Приключения и квесты] Frontier Tale (1.67 GB) - t=6939371
+  + [Симуляторы] One More Lawn (624.3 MB) - t=6939592
+  + [Симуляторы] SpaceEngine / Space Engine PRO (53.21 GB) - t=5932473
+  + [Симуляторы] The Long Dark (13.99 GB) - t=6608367
+  + [Симуляторы] Trail Out (26.7 GB) - t=6450180
+  + [Симуляторы] Groundwork Simulator (7.32 GB) - t=6939507
+  + [Симуляторы] Sol One (2.97 GB) - t=6939446
+  + [Симуляторы] Find The Gold (473.3 MB) - t=6939410
+  + [Симуляторы] Mistwake (104.8 MB) - t=6939404
+  + [Симуляторы] Ranger's Path: National Park Simulator (21.62 GB) - t=6939368
+  + [Хорроры] 771: Smile and work (2.07 GB) - t=6939439
+  + [Логические игры] Room Football - Royale Lands (264 MB) - t=6939384
+  + [Квесты в стиле Поиск предметов] Hidden Wings and Paws (163.2 MB) - t=6939385
 
 --- Обновлённые раздачи ---
-  ~ [Новинки] Mayday: The Survival Island (460.4 MB) - t=6932569
-  ~ [Экшены от первого лица] Black Mesa (12.55 GB) - t=6695897
-  ~ [Экшены от первого лица] Warhammer 40,000: Boltgun 2 (10.15 GB) - t=6923288
-  ~ [Экшены от первого лица] Ground Branch (41.02 GB) - t=6883022
-  ~ [Ролевые игры] The Blood of Dawnwalker (55.54 GB) - t=6903361
-  ~ [Стратегии в реальном времени] Crusader Kings III (3) (7.95 GB) - t=6589065
-  ~ [Стратегии в реальном времени] The Scouring (1007.7 MB) - t=6733101
-  ~ [Стратегии в реальном времени] Terra Invicta (31.17 GB) - t=6797843
-  ~ [Приключения и квесты] Songs of Glimmerwick (1.24 GB) - t=6916681
-  ~ [Автосимуляторы и гонки] CarX Drift Racing Online (7.95 GB) - t=5484322
+  ~ [Новинки] Cozy Game Restoration (6.12 GB) - t=6933056
+  ~ [Экшены от первого лица] cicadamata' (315.1 MB) - t=6899177
+  ~ [Стратегии в реальном времени] Zombies Aren't Real (255.3 MB) - t=6938047
+  ~ [Симуляторы] Oxygen Not Included (3.1 GB) - t=6700426
+  ~ [Автосимуляторы и гонки] CarX Drift Racing Online (1.17 GB) - t=5484322
