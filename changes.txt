@@ -1,18 +1,32 @@
-=== Изменения базы pc-games: 2026-11-20 02:01:33 ===
-Всего игр в базе: 5079
-Добавлено новых: 6
-Обновлено раздач: 3
+=== Изменения базы pc-games: 2026-11-21 02:01:48 ===
+Всего игр в базе: 5097
+Добавлено новых: 18
+Обновлено раздач: 5
 Дообогащено метаданными: 100
 
 --- Новые раздачи [portable] ---
-  + [Новинки] Defender Bros (5.32 GB) - t=6940199
-  + [Экшены от третьего лица] Burning Sword: Death Sun (14.99 GB) - t=6940084
-  + [Приключения и квесты] Lord of Undead (1.75 GB) - t=6939768
-  + [Симуляторы] Vending Park: Sort & Stock (323.6 MB) - t=6940140
-  + [Симуляторы] Trust Your Gut (950.3 MB) - t=6940123
-  + [Симуляторы] Family Time (829.3 MB) - t=6915881
+  + [Новинки] AlterMage (37.39 GB) - t=6940649
+  + [Новинки] Rock Band Simulator (727.3 MB) - t=6940600
+  + [Новинки] One Fenix Down (2.05 GB) - t=6940508
+  + [Новинки] Poop Killer - The Golden Fart (7.03 GB) - t=6940494
+  + [Новинки] Toto's Journey (9.69 GB) - t=6940489
+  + [Новинки] Bunny Eureka (2.12 GB) - t=6940477
+  + [Новинки] Dawn Apart (2.88 GB) - t=6940468
+  + [Новинки] Blacksmith Master / 铁匠大师 (404.7 MB) - t=6940439
+  + [Экшены от третьего лица] Evil Dead: The Game (15.76 GB) - t=6940720
+  + [Стратегии в реальном времени] Malignus (1.29 GB) - t=6940388
+  + [Пошаговые стратегии] Talisman: Digital 5th Edition (2.81 GB) - t=6940499
+  + [Приключения и квесты] Disney Dreamlight Valley (27.37 GB) - t=6686107
+  + [Симуляторы] BoomBox Remastered (1.55 GB) - t=6940163
+  + [Симуляторы] Inazuma Eleven: Victory Road (57.43 GB) - t=6839547
+  + [Симуляторы] Goat Simulator 3 (15.62 GB) - t=6707725
+  + [Симуляторы] Wolfsbanner: Medieval Kingdom RPG (16.69 GB) - t=6940427
+  + [Аркады] Pool of Madness (2.67 GB) - t=6940558
+  + [Аркады] Stick A Fork (78.2 MB) - t=6940462
 
 --- Обновлённые раздачи ---
-  ~ [Экшены от первого лица] Fracture Point (5.58 GB) - t=6905568
-  ~ [Симуляторы] Car Dealer Simulator (19.94 GB) - t=6780004
-  ~ [Симуляторы] Oxygen Not Included (3.04 GB) - t=6700426
+  ~ [Новинки] Code Market (127.7 MB) - t=6938974
+  ~ [Новинки] Zed Zone (483.4 MB) - t=6918199
+  ~ [Новинки] Saloon Simulator (9.94 GB) - t=6934065
+  ~ [Приключения и квесты] Dreadmoor (6.3 GB) - t=6935488
+  ~ [Логические игры] Demonic Mahjong / 我在地府打麻将 (3.47 GB) - t=6721128
