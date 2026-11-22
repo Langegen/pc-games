@@ -1,32 +1,30 @@
-=== Изменения базы pc-games: 2026-11-21 02:01:48 ===
-Всего игр в базе: 5097
-Добавлено новых: 18
+=== Изменения базы pc-games: 2026-11-22 02:39:13 ===
+Всего игр в базе: 5113
+Добавлено новых: 16
 Обновлено раздач: 5
 Дообогащено метаданными: 100
 
 --- Новые раздачи [portable] ---
-  + [Новинки] AlterMage (37.39 GB) - t=6940649
-  + [Новинки] Rock Band Simulator (727.3 MB) - t=6940600
-  + [Новинки] One Fenix Down (2.05 GB) - t=6940508
-  + [Новинки] Poop Killer - The Golden Fart (7.03 GB) - t=6940494
-  + [Новинки] Toto's Journey (9.69 GB) - t=6940489
-  + [Новинки] Bunny Eureka (2.12 GB) - t=6940477
-  + [Новинки] Dawn Apart (2.88 GB) - t=6940468
-  + [Новинки] Blacksmith Master / 铁匠大师 (404.7 MB) - t=6940439
-  + [Экшены от третьего лица] Evil Dead: The Game (15.76 GB) - t=6940720
-  + [Стратегии в реальном времени] Malignus (1.29 GB) - t=6940388
-  + [Пошаговые стратегии] Talisman: Digital 5th Edition (2.81 GB) - t=6940499
-  + [Приключения и квесты] Disney Dreamlight Valley (27.37 GB) - t=6686107
-  + [Симуляторы] BoomBox Remastered (1.55 GB) - t=6940163
-  + [Симуляторы] Inazuma Eleven: Victory Road (57.43 GB) - t=6839547
-  + [Симуляторы] Goat Simulator 3 (15.62 GB) - t=6707725
-  + [Симуляторы] Wolfsbanner: Medieval Kingdom RPG (16.69 GB) - t=6940427
-  + [Аркады] Pool of Madness (2.67 GB) - t=6940558
-  + [Аркады] Stick A Fork (78.2 MB) - t=6940462
+  + [Новинки] Please Confirm The Deceased (420 MB) - t=6940846
+  + [Новинки] Hold the Dawn / Удержи рассвет (709.6 MB) - t=6940844
+  + [Новинки] Cardaire: Eternal Aces (422.7 MB) - t=6940825
+  + [Новинки] Swarmbreaker (388.6 MB) - t=6940812
+  + [Новинки] Demockracy (384.7 MB) - t=6940809
+  + [Новинки] Rocket Scrapyard (883.7 MB) - t=6940806
+  + [Новинки] Ghost Algorithm (460.1 MB) - t=6940805
+  + [Новинки] It Thinks! - Build Your Own GPU (180.4 MB) - t=6940816
+  + [Экшены от первого лица] CONVRGENCE (13.38 GB) - t=6941051
+  + [Ролевые игры] Exanima (7.79 GB) - t=6919570
+  + [Ролевые игры] Ostranauts (2.52 GB) - t=6232338
+  + [Стратегии в реальном времени] We March as One (236.1 MB) - t=6941077
+  + [Приключения и квесты] Truckful (1.7 GB) - t=6921112
+  + [Симуляторы] Breakout Garage (6.67 GB) - t=6914008
+  + [Аркады] korridor (620.4 MB) - t=6941233
+  + [Аркады] Dice Have No Eyes (173.7 MB) - t=6941117
 
 --- Обновлённые раздачи ---
-  ~ [Новинки] Code Market (127.7 MB) - t=6938974
-  ~ [Новинки] Zed Zone (483.4 MB) - t=6918199
-  ~ [Новинки] Saloon Simulator (9.94 GB) - t=6934065
-  ~ [Приключения и квесты] Dreadmoor (6.3 GB) - t=6935488
-  ~ [Логические игры] Demonic Mahjong / 我在地府打麻将 (3.47 GB) - t=6721128
+  ~ [Стратегии в реальном времени] Here Comes the Horde (240.1 MB) - t=6939294
+  ~ [Новинки] Noble Fates (1.42 GB) - t=6937296
+  ~ [Новинки] How They Built the Pyramids (429.9 MB) - t=6937798
+  ~ [Экшены от первого лица] Hell Galaxy (14.69 GB) - t=6894427
+  ~ [Пошаговые стратегии] Hex of Steel (665.7 MB) - t=6181792
