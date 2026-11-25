@@ -1,63 +1,26 @@
-=== Изменения базы pc-games: 2026-11-24 02:01:22 ===
-Всего игр в базе: 5150
-Добавлено новых: 37
-Обновлено раздач: 23
+=== Изменения базы pc-games: 2026-11-25 02:01:20 ===
+Всего игр в базе: 5162
+Добавлено новых: 12
+Обновлено раздач: 5
 Дообогащено метаданными: 100
 
 --- Новые раздачи [portable] ---
-  + [Новинки] Milki Delivery (159 MB) - t=6941677
-  + [Новинки] boom! buster (435.7 MB) - t=6941681
-  + [Новинки] Neo Junk City (276.4 MB) - t=6941668
-  + [Новинки] The Cozy Funemployment (129.8 MB) - t=6941590
-  + [Ролевые игры] Elin (905.5 MB) - t=6801566
-  + [Ролевые игры] Zero Parades: Director's Cut (12.93 GB) - t=6860978
-  + [Ролевые игры] Sacred 2 Remaster (18.36 GB) - t=6771235
-  + [Стратегии в реальном времени] Water TD (79.6 MB) - t=6942144
-  + [Пошаговые стратегии] Dice Showdown (120.9 MB) - t=6941805
-  + [Приключения и квесты] Where Lanterns Lead (2.39 GB) - t=6941872
-  + [Приключения и квесты] Crimson Moon (28.39 GB) - t=6902932
-  + [Приключения и квесты] Gene Crawl: Dungeon Descent (86.6 MB) - t=6941626
-  + [Приключения и квесты] Devil's Drizzle (733.2 MB) - t=6941560
-  + [Симуляторы] Sunkenland (14.99 GB) - t=6896471
-  + [Симуляторы] On The Train (5.41 GB) - t=6941891
-  + [Симуляторы] Bubba Chop Grove (348.4 MB) - t=6941889
-  + [Симуляторы] Cake and Bake (145.1 MB) - t=6941885
-  + [Симуляторы] Crypto in a Haystack (970.6 MB) - t=6940829
-  + [Симуляторы] StoneEra (1.45 GB) - t=6941879
-  + [Симуляторы] Bamboo Ronin: The Last Cut (473.3 MB) - t=6941873
-  + [Симуляторы] Feed Me More Brains (1.14 GB) - t=6941870
-  + [Симуляторы] Dispatch Simulator (430.8 MB) - t=6941869
-  + [Симуляторы] Last Bake (4.64 GB) - t=6941867
-  + [Симуляторы] Traveloot (186.6 MB) - t=6941826
-  + [Симуляторы] NebulArena (2.12 GB) - t=6941801
-  + [Симуляторы] Underbloom (361.3 MB) - t=6941797
-  + [Симуляторы] Oboro no Ichi (1.13 GB) - t=6936359
-  + [Симуляторы] StarRupture (48.49 GB) - t=6798348
-  + [Симуляторы] BeamNG.drive (52.23 GB) - t=6888490
-  + [Симуляторы] Assetto Corsa Rally (26.71 GB) - t=6772200
-  ... и ещё 7 раздач
+  + [Новинки] Cable Management Simulator (437.2 MB) - t=6942521
+  + [Ролевые игры] Kernel Hearts (16.18 GB) - t=6913578
+  + [Приключения и квесты] C.L.T. (544.8 MB) - t=6942708
+  + [Симуляторы] Node: Protocol (1.23 GB) - t=6942711
+  + [Симуляторы] PC Store Together (2.38 GB) - t=6942705
+  + [Симуляторы] Shred A Billion (611.1 MB) - t=6942654
+  + [Симуляторы] A Thousand Cloys (245.9 MB) - t=6942645
+  + [Симуляторы] No Asteroids (521.6 MB) - t=6942636
+  + [Симуляторы] Sardoinky (70.6 MB) - t=6942621
+  + [Симуляторы] Internet Cafe 98 (221.3 MB) - t=6942603
+  + [Аркады] Witch the Showdown (2.58 GB) - t=6942502
+  + [Аркады] Atomcraft (180 MB) - t=6886304
 
 --- Обновлённые раздачи ---
-  ~ [Экшены от первого лица] [Сборник] Serious Sam Fusion 2017 (Serious Sam HD: The First Encounter (Крутой Сэм HD: Первая кровь) / The Second Encounter (Второе пришествие) / Serious Sam 3: BFE) (8.88 GB) - t=6127530
-  ~ [Новинки] Never Sort By Color (1.91 GB) - t=6936353
-  ~ [Новинки] Death at Fleming Manor (1002.3 MB) - t=6935857
-  ~ [Экшены от третьего лица] Windblown (3.66 GB) - t=6589846
-  ~ [Экшены от третьего лица] Icarus (49.65 GB) - t=6590097
-  ~ [Экшены от третьего лица] Half Sword (11.67 GB) - t=6809915
-  ~ [Экшены от третьего лица] From Space (4.82 GB) - t=6279035
-  ~ [Экшены от первого лица] Pax Autocratica (29.19 GB) - t=6893495
-  ~ [Ролевые игры] Frosthaven (36.3 GB) - t=6923119
-  ~ [Стратегии в реальном времени] Blitzkrieg 3 (3.19 GB) - t=6931506
-  ~ [Стратегии в реальном времени] Victoria 3 (9 GB) - t=6275078
-  ~ [Стратегии в реальном времени] Strategos (15.53 GB) - t=6806646
-  ~ [Стратегии в реальном времени] Europa Universalis V (5) (7.44 GB) - t=6767829
-  ~ [Стратегии в реальном времени] Crusader Kings III (3) (7.95 GB) - t=6589065
-  ~ [Пошаговые стратегии] Zephon (8.74 GB) - t=6597292
-  ~ [Приключения и квесты] Nivalis Nights (29.43 GB) - t=6915847
-  ~ [Приключения и квесты] Lay of the Land (2.36 GB) - t=6842399
-  ~ [Приключения и квесты] Cairn (12.26 GB) - t=6809384
-  ~ [Симуляторы] Quarantine Zone: The Last Check (18.83 GB) - t=6801439
-  ~ [Симуляторы] Graveyard Keeper 2 (1.31 GB) - t=6912460
-  ~ [Симуляторы] Find The Needle (2.1 GB) - t=6934017
-  ~ [Новинки] Birb (37.2 MB) - t=6932015
-  ~ [Логические игры] Order of the Sinking Star (13.82 GB) - t=6920050
+  ~ [Экшены от первого лица] White Knuckle (1.6 GB) - t=6680267
+  ~ [Ролевые игры] Elin (905.6 MB) - t=6801566
+  ~ [Стратегии в реальном времени] Desynced (2.18 GB) - t=6399129
+  ~ [Приключения и квесты] Songs of Glimmerwick (1.24 GB) - t=6916681
+  ~ [Аркады] Tape to Tape (1.18 GB) - t=6927584
